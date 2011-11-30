@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+* { margin: 0; outline: medium none; padding: 0; }
+:focus { outline: 0; }
+
+body { width: 100%; padding: 98px 0 0 0; background-color: #F2F4F8; color:#5B6976; font-family: 'Droid Sans', sans-serif, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; }
+#wrapper { width: 948px; background: url(background-wrapper.gif) repeat-y 0px 0px; margin: 0px auto; }
+
+/* Basics */
+h1, h2, h3, h4, h5 { color: #354656; font-family: 'Droid Sans', sans-serif, Arial, Helvetica, sans-serif; font-weight:normal; }
+h1 { font-size: 20px; font-weight: normal; }
+h2 { font-size: 18px; font-weight: normal; }
+h3 { font-size: 16px; font-weight: bold; }
+h4 { font-size: 14px; font-weight: bold; }
+h5 { font-size: 12px; font-weight: bold; }
+h6 { font-size: 11px; font-weight: bold; }
+p, a, span { font-family: 'Droid Sans', sans-serif, Arial, Helvetica, sans-serif; }
+p { color: #5B6976; font: normal 11px/17px 'Droid Sans', sans-serif, Arial, Helvetica, sans-serif; margin: 0 0 10px 0; }
+img { border: medium none; }
+form { display: inline; }
+fieldset { border: 0; }
+legend { display: none; }
+table { border: 0; border-spacing: 0; empty-cells: show; font-size: 100%; }
+caption, th, td { font-weight: normal; text-align: left; vertical-align: top; }
+strong { font-weight: bold; }
+address { font-style: normal; line-height: 1.35; }
+cite { font-style:normal; }
+q, blockquote { quotes: none; }
+q:before, q:after { content:''; }
+small, big { font-size: 1em; }
+sup { font-size: 1em; vertical-align: top; }
+
+/* Header */
+#header { width: 940px; height: 512px; background: url(background-header.gif) no-repeat 0px 0px; position: relative; margin: 0px auto; padding: 5px 0 0 0; }
+.device { width: 326px; height: 624px; position: absolute; top: -73px; left: 300px; background-repeat: no-repeat; background-position: 0px 0px; }
+
+.device iframe { position: relative; top: 128px; border: 0; left: 28px; }
+
+/* Devices */
+.device.iphone { background-image: url(device-iphone.png); }
+.device.iphone img { margin-top: 129px; margin-left: 28px; width: 272px; height: 391px; }
