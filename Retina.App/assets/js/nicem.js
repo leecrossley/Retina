@@ -2,6 +2,8 @@ var nicem = (function () {
     var nicem = {};
     pageLoad = {};
 	
+	nicem.searchTerm = "";
+	
 	nicem.init = function () {
         setupPageLoadEvent();
         nicem.subscribeToPageLoad("pageLoad", ajaxPageLoad);
@@ -36,21 +38,31 @@ var nicem = (function () {
 			e.stopPropagation();
 			$("." + id).hide();
 			$.mobile.showPageLoadingMsg();
-			var data;
-			data.imageData = 
+			var data = {};
 			data.x = $('#x').val();
 			data.y = $('#y').val();
 			data.w = $('#w').val();
 			data.h = $('#h').val();
 			$.ajax({
-				type: "POST",
+				type: "GET",
 				url: "http://www.ukfy.co.uk/image",
-				data: ,
+				data: data,
 				success: function (data) {
 					$.mobile.hidePageLoadingMsg();
-					alert(data.result);
-				}
-				dataType: dataType
+					if (data.success) {
+						alert(data.result);
+						nicem.searchTerm = data.result;
+						$.mobile.loadPage("process.html");
+					} else {
+						alert("unable to process your request on this occassion.");
+					}
+				},
+				error: function () {
+					$.mobile.hidePageLoadingMsg();
+					alert("unable to process your request on this occassion.");
+				},
+				dataType: "jsonp",
+				crossDomain: true
 			});
 			return false;
 		});
