@@ -5,3 +5,10 @@ C:\evidence-r4\retina\Retina\Retina\bin\EntityFramework.dll
 C:\evidence-r4\retina\Retina\Retina\bin\EntityFramework.xml
 C:\evidence-r4\retina\Retina\Retina\obj\Debug\Retina.dll
 C:\evidence-r4\retina\Retina\Retina\obj\Debug\Retina.pdb
+C:\evidence-r4\nice_www\Retina\Retina.OCR\Retina\obj\Debug\ResolveAssemblyReference.cache
+C:\evidence-r4\nice_www\Retina\Retina.OCR\Retina\obj\Debug\Retina.dll
+C:\evidence-r4\nice_www\Retina\Retina.OCR\Retina\bin\Retina.dll
+C:\evidence-r4\nice_www\Retina\Retina.OCR\Retina\bin\Retina.pdb
+C:\evidence-r4\nice_www\Retina\Retina.OCR\Retina\bin\EntityFramework.dll
+C:\evidence-r4\nice_www\Retina\Retina.OCR\Retina\bin\EntityFramework.xml
+C:\evidence-r4\nice_www\Retina\Retina.OCR\Retina\obj\Debug\Retina.pdb

@@ -1,3 +1,4 @@
 <Modules>
   <Module PersistentId="DF096E7F-07BE-47FE-9D73-382480E3913C" ModuleId="Retina" />
+  <Module PersistentId="E254D08B-96AD-4E36-880A-B070C69604DD" ModuleId="Retina.OCR.Test" />
 </Modules>
