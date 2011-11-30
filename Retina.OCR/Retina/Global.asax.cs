@@ -18,15 +18,15 @@ namespace Retina
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                "Retina", 
+                "image",
+                new { controller = "Image", action = "ocrImage" });
+
+            routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
             );
-            routes.MapRoute(
-                "Retina", 
-                "image", 
-                new { controller = "Image", action = "ocrImage" },
-                new { httpMethod = new HttpMethodConstraint("POST") });
         }
 
         protected void Application_Start()
