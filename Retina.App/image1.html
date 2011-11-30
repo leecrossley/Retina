@@ -4,18 +4,30 @@
 	</head> 
 <body>
 
-<div data-role="page" id="appstart" data-theme="a">
+<div data-role="page" id="image1" data-theme="a">
 	
 	<div data-role="header" data-position="fixed">
 		<h1>Crop Image</h1>
 	</div><!-- /header -->
 	
 	<div data-role="content">
-		
+		<center>
+			<img class="image1" src="assets/img/image1.png" />
+		</center>
+		<form
+		<input type="hidden" size="4" id="x" name="x" />
+		<input type="hidden" size="4" id="y" name="y" />
+		<input type="hidden" size="4" id="w" name="w" />
+		<input type="hidden" size="4" id="h" name="h" />
 	</div><!-- /content -->
 	
 	<div data-role="footer" data-position="fixed">
-		<h4><small>&copy; 2011 Team 'Breve'</small></h4>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="library.html" data-role="button" data-theme="a">BACK</a></li>
+				<li><a href="process.html" data-role="button" data-theme="a" data-next-button="true">PROCESS</a></li>
+			</ul>
+		</div>
 	</div><!-- /footer -->
 
 </div><!-- /page -->
