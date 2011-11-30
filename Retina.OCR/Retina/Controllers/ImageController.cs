@@ -36,7 +36,7 @@ namespace Retina.Controllers
             target.Save(AppDomain.CurrentDomain.BaseDirectory + "/Temp/ocrImage.jpg", ImageFormat.Jpeg);
 
             // communicate with the ocr
-            var imageUrl = "http://www.rhmg-files.co.uk/image1.png";
+            var imageUrl = "http://www.rhmg-files.co.uk/image2.png";
             var key = "1hJy2bFmeFaoVpYk-1QD_Gsoe4cIDXYS";
             var xe = new XElement("Job",
                     new XElement("InputURL", imageUrl)
