@@ -1,0 +1,43 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="DF096E7F-07BE-47FE-9D73-382480E3913C/f:Web.config" caret="0" fromTop="0" />
+      <File id="DF096E7F-07BE-47FE-9D73-382480E3913C/f:Global.asax.cs" caret="990" fromTop="27" />
+      <File id="DF096E7F-07BE-47FE-9D73-382480E3913C/d:Views/d:Image/f:ocrImage.cshtml" caret="0" fromTop="0" />
+      <File id="DF096E7F-07BE-47FE-9D73-382480E3913C/d:Controllers/f:ImageController.cs" caret="191" fromTop="8" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="DF096E7F-07BE-47FE-9D73-382480E3913C/f:Global.asax.cs" caret="0" fromTop="0" />
+      <File id="DF096E7F-07BE-47FE-9D73-382480E3913C/f:Global.asax.cs" caret="1111" fromTop="26" />
+      <File id="DF096E7F-07BE-47FE-9D73-382480E3913C/f:Global.asax.cs" caret="944" fromTop="27" />
+      <File id="DF096E7F-07BE-47FE-9D73-382480E3913C/d:Controllers/f:ImageController.cs" caret="191" fromTop="8" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:System.Web.Routing.RouteCollection">
+      <Item value="MapRoute`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="new" priority="0" />
+      <Item value="object" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
