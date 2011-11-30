@@ -18,7 +18,7 @@ namespace Retina
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                "Retina", 
+                "Retina",
                 "image",
                 new { controller = "Image", action = "ocrImage" });
 

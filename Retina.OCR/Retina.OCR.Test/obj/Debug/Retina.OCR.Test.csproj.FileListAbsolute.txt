@@ -1,5 +1,0 @@
-C:\evidence-r4\nice_www\Retina\Retina.OCR\Retina.OCR.Test\bin\Debug\Retina.OCR.Test.dll
-C:\evidence-r4\nice_www\Retina\Retina.OCR\Retina.OCR.Test\bin\Debug\Retina.OCR.Test.pdb
-C:\evidence-r4\nice_www\Retina\Retina.OCR\Retina.OCR.Test\obj\Debug\ResolveAssemblyReference.cache
-C:\evidence-r4\nice_www\Retina\Retina.OCR\Retina.OCR.Test\obj\Debug\Retina.OCR.Test.dll
-C:\evidence-r4\nice_www\Retina\Retina.OCR\Retina.OCR.Test\obj\Debug\Retina.OCR.Test.pdb

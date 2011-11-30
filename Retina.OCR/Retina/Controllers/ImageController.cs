@@ -7,17 +7,24 @@ using System.Net;
 using System.Threading;
 using System.Web.Mvc;
 using System.Xml.Linq;
+using Retina.Properties;
+
+//http://www.webservius.com/cons/subscribe.aspx?p=wisetrend&s=wiseocr
 
 namespace Retina.Controllers
 {
     public class ImageController : Controller
     {
-        [HttpPost]
-        public ActionResult ocrImage(string imageData, int x, int y, int w, int h)
+        public ActionResult ocrImage(int x, int y, int w, int h)
         {
             var guid = Guid.NewGuid();
             // create image from string
-            var imageBytes = Convert.FromBase64String(imageData);
+            TextReader trs = new StreamReader(AppDomain.CurrentDomain.BaseDirectory + "/Temp/cancerBase64.txt");
+            var file = trs.ReadToEnd();
+
+            file = file.Replace(Environment.NewLine, "");
+            file = file.Replace("\f", "");
+            var imageBytes = Convert.FromBase64String(file);
             var ms = new MemoryStream(imageBytes, 0,
                                                imageBytes.Length);
             ms.Write(imageBytes, 0, imageBytes.Length);
@@ -34,10 +41,10 @@ namespace Retina.Controllers
             }
             // save to temp dir with key
             target.Save(AppDomain.CurrentDomain.BaseDirectory + "/Temp/" + guid + ".png", ImageFormat.Png);
-
+            /*
             // communicate with the ocr
             var imageUrl = "http://www.ukfy.co.uk//Temp/" + guid + ".png";
-            var key = "1hJy2bFmeFaoVpYk-1QD_Gsoe4cIDXYS";
+            var key = Settings.Default.ApiKey;
             var xe = new XElement("Job",
                     new XElement("InputURL", imageUrl)
                 );
@@ -89,8 +96,8 @@ namespace Retina.Controllers
             var s = sr.ReadToEnd();
             // return
             s = s.Replace(Environment.NewLine, "");
-            s = s.Replace("\f", "");
-            return Json(new { success = true, result = s });
+            s = s.Replace("\f", "");*/
+            return Json(new { success = true, result = "bob" }, JsonRequestBehavior.AllowGet);
         }
     }
 }
