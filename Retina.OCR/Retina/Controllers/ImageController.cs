@@ -41,7 +41,7 @@ namespace Retina.Controllers
             }
             // save to temp dir with key
             target.Save(AppDomain.CurrentDomain.BaseDirectory + "/Temp/" + guid + ".png", ImageFormat.Png);
-            /*
+            
             // communicate with the ocr
             var imageUrl = "http://www.ukfy.co.uk//Temp/" + guid + ".png";
             var key = Settings.Default.ApiKey;
@@ -80,13 +80,14 @@ namespace Retina.Controllers
                 results = wc.DownloadString(jobURL);
             }
             var pathToText = "";
-            if (textURL == null)
+            if (string.IsNullOrEmpty(textURL))
             {
                 Console.WriteLine("An error has occurred");
                 return Json(new { success = false, result = "" });
             }
             pathToText = wc.DownloadString(textURL);
             Console.WriteLine(pathToText);
+            /*
             // get the terms back
             var req = WebRequest.Create(pathToText);
             var resp = req.GetResponse();
@@ -94,10 +95,11 @@ namespace Retina.Controllers
             var sr = new StreamReader(stream);
 
             var s = sr.ReadToEnd();
-            // return
-            s = s.Replace(Environment.NewLine, "");
-            s = s.Replace("\f", "");*/
-            return Json(new { success = true, result = "bob" }, JsonRequestBehavior.AllowGet);
+            s = s.Replace(Environment.NewLine, "");*/
+            pathToText = pathToText.Replace("\f", "");
+            Response.AddHeader("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Origin, api-key, Access-Control-Allow-Headers, Accept");
+            Response.AddHeader("Access-Control-Allow-Origin", "*");
+            return Json(new { success = true, result = pathToText }, JsonRequestBehavior.AllowGet);
         }
     }
 }
